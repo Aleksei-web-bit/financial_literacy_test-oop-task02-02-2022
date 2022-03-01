@@ -1,8 +1,19 @@
 public class Answer {
 
-    private int[] answersArray = {1, 2, 1};
+    private int correctOption;
 
-    public int[] getAnswersArray() {
-        return answersArray;
+    public Answer() {
+    }
+
+    public Answer(int correctOption) {
+        this.correctOption = correctOption;
+    }
+
+    public int getCorrectOption() {
+        return correctOption;
+    }
+
+    public void setCorrectOption(int correctOption) {
+        this.correctOption = correctOption;
     }
 }

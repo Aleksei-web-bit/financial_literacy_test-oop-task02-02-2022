@@ -1,19 +1,40 @@
+
 public class Question {
 
-    private String[] questionsArray = {"Что такое бюджет семьи?\n" +
-            "1) план, содержащий роспись всех доходов и расходов семьи за определённый период времени;\n" +
-            "2) сумма всех доходов, которыми может распоряжаться семья;\n" +
-            "3) подробный отчёт о расходах за определённый период времени;\n" +
-            "4) план, учитывающий все доходы и возможные накопления, позволяющий рассчитать время, необходимое для совершения крупной покупки.\n", "Целью страхования является:\n" +
-            "1) обеспечение гражданам возможности дополнительного заработка при наступлении неблагоприятного события;\n" +
-            "2) обеспечение гражданам возможности компенсации ущерба при наступлении страхового случая;\n" +
-            "3) ускорение обращения денежных средств в экономике государства.\n", "Проработанный детализированный план по обеспечению личной финансовой безопасности и независимости - это:\n" +
-            "1) персональная инвестиционная стратегия;\n" +
-            "2) инвестирование;\n" +
-            "3) финансирование;\n" +
-            "4) размещение денежных средств во вклады.\n"};
+    private String description;
+    private String[] options;
+    private Answer answer;
 
-    public String[] getQuestionsArray() {
-        return questionsArray;
+    public Question() {
+    }
+
+    public Question(String description, String[] options, Answer answer) {
+        this.description = description;
+        this.options = options;
+        this.answer = answer;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String[] getOptions() {
+        return options;
+    }
+
+    public void setOptions(String[] options) {
+        this.options = options;
+    }
+
+    public Answer getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(Answer answer) {
+        this.answer = answer;
     }
 }
